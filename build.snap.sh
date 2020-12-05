@@ -10,7 +10,7 @@ cd $DIR
 
 #check version
 rm index.html
-wget -nv https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/
+wget -q https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/
 sLine=$(cat index.html | grep 4a-gigabit-squashfs-sysupgrade.bin)
 sTime=$(expr "$sLine" : '.*"d">\(.*\)</td>.*')
 sVersion=$(echo $sTime | awk '{printf "%s_%s", $2,$3}')
