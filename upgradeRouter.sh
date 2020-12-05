@@ -6,9 +6,8 @@ cd $DIR
 #upgrade router firmware
 githubLatest=$(curl -so- https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/latestVersion)
 luciVersion=$(cat ./latestVersion)
-echo --------
-echo $(date)
-echo '[ githubLatest==localVersion ] No need to update!'
+#echo --------
+echo $(date '+%F %T') '[ githubLatest==localVersion ] No need to update!'
 [ $githubLatest = $luciVersion ] && exit
 wget https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/firmware/snap/$githubLatest -O ./firmware/snap/$githubLatest
 echo $githubLatest >./latestVersion
