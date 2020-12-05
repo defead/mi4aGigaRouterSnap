@@ -44,6 +44,7 @@ echo ${sVersion}-luci.bin >./latestVersion
 
 
 #github push
+git pull
 git add .
 git commit -am "add version ${sVersion}"
 git push
