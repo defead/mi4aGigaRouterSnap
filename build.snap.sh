@@ -28,7 +28,7 @@ echo [ $sTime ] .bin version >> ./versionDate
 
 #build luci version
 rm -r openwrt-imagebuilder-ramips-mt7621.Linux-x86_64*
-aria2c -s 16 -x 16 -k 1M $builderUrl
+wget $builderUrl
 tar -xf openwrt-imagebuilder-ramips-mt7621.Linux-x86_64.tar.xz
 cd openwrt-imagebuilder-ramips-mt7621.Linux-x86_64
 make image PROFILE=$profileSetting PACKAGES="luci"
@@ -38,7 +38,3 @@ cd ..
 echo [ $(date) ] luci.bin build >> ./versionDate
 echo '--------------' >> ./versionDate
 
-#upgrade router firmware
-cd ..
-scp ./firmware/snap/${sVersion}-luci.bin root@192.168.0.1:/tmp
-ssh root@192.168.0.1 sysupgrade -v /tmp/${sVersion}-luci.bin
