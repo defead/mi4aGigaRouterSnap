@@ -10,7 +10,7 @@ cd $DIR
 
 #check version
 rm index.html
-wget -q https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/
+wget -nv https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/
 sLine=$(cat index.html | grep 4a-gigabit-squashfs-sysupgrade.bin)
 sTime=$(expr "$sLine" : '.*"d">\(.*\)</td>.*')
 sVersion=$(echo $sTime | awk '{printf "%s_%s", $2,$3}')
@@ -23,12 +23,12 @@ echo Expected version $sVersion
 }
 
 #download default bin
-wget $defaultUrl -O ./firmware/snap/${sVersion}.bin &
+wget $defaultUrl -nvO ./firmware/snap/${sVersion}.bin &
 echo [ $sTime ] .bin version >> ./versionDate
 
 #build luci version
 rm -r openwrt-imagebuilder-ramips-mt7621.Linux-x86_64*
-wget $builderUrl
+wget -nv $builderUrl
 tar -xf openwrt-imagebuilder-ramips-mt7621.Linux-x86_64.tar.xz
 cd openwrt-imagebuilder-ramips-mt7621.Linux-x86_64
 make image PROFILE=$profileSetting PACKAGES="luci"
