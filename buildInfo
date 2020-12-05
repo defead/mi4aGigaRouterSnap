@@ -1,0 +1,485 @@
+Generate local signing keys...
+Generate local certificate...
+Checking 'working-make'... ok.
+Checking 'case-sensitive-fs'... ok.
+Checking 'proper-umask'... ok.
+Checking 'perl-data-dumper'... ok.
+Checking 'perl-thread-queue'... ok.
+Checking 'tar'... ok.
+Checking 'find'... ok.
+Checking 'bash'... ok.
+Checking 'xargs'... ok.
+Checking 'patch'... ok.
+Checking 'diff'... ok.
+Checking 'cp'... ok.
+Checking 'seq'... ok.
+Checking 'awk'... ok.
+Checking 'grep'... ok.
+Checking 'egrep'... ok.
+Checking 'getopt'... ok.
+Checking 'stat'... ok.
+Checking 'unzip'... ok.
+Checking 'bzip2'... ok.
+Checking 'wget'... ok.
+Checking 'perl'... ok.
+Checking 'python2-cleanup'... ok.
+Checking 'python'... ok.
+Checking 'python3'... ok.
+Checking 'git'... ok.
+Checking 'file'... ok.
+Checking 'ldconfig-stub'... ok.
+Building images for ramips - Xiaomi Mi Router 4A Gigabit Edition
+Packages: luci base-files busybox ca-bundle dnsmasq dropbear firewall fstools ip6tables iptables kernel kmod-gpio-button-hotplug kmod-ipt-offload kmod-leds-gpio kmod-mt7603 kmod-mt76x2 libc libgcc libustream-wolfssl logd mtd netifd odhcp6c odhcpd-ipv6only opkg ppp ppp-mod-pppoe procd uci uclient-fetch urandom-seed urngd wpad-basic-wolfssl
+
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_core
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_base
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_kmods
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/freifunk/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_freifunk
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/freifunk/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_luci
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/packages/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_packages
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/packages/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/routing/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_routing
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/routing/Packages.sig
+Signature check passed.
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/telephony/Packages.gz
+Updated list of available packages in /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/../../../../../../root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/dl/openwrt_telephony
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/telephony/Packages.sig
+Signature check passed.
+
+Installing packages...
+Installing libc (1.1.24-2) to root...
+Installing libgcc1 (8.4.0-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/libgcc1_8.4.0-2_mipsel_24kc.ipk
+Configuring libgcc1.
+Configuring libc.
+Installing kernel (5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0) to root...
+Configuring kernel.
+Installing luci (git-20.074.84698-ead5e81) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci_git-20.074.84698-ead5e81_all.ipk
+Installing libubox20191228 (2020-08-06-9e52171d-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libubox20191228_2020-08-06-9e52171d-1_mipsel_24kc.ipk
+Installing libjson-c5 (0.15-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libjson-c5_0.15-1_mipsel_24kc.ipk
+Installing libblobmsg-json (2020-08-06-9e52171d-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libblobmsg-json_2020-08-06-9e52171d-1_mipsel_24kc.ipk
+Installing libjson-script (2020-08-06-9e52171d-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libjson-script_2020-08-06-9e52171d-1_mipsel_24kc.ipk
+Installing uhttpd (2020-11-23-f53a6399-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/uhttpd_2020-11-23-f53a6399-1_mipsel_24kc.ipk
+Installing libubus20191227 (2020-10-25-ad0cd117-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libubus20191227_2020-10-25-ad0cd117-1_mipsel_24kc.ipk
+Installing uhttpd-mod-ubus (2020-11-23-f53a6399-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/uhttpd-mod-ubus_2020-11-23-f53a6399-1_mipsel_24kc.ipk
+Installing liblua5.1.5 (5.1.5-7) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/liblua5.1.5_5.1.5-7_mipsel_24kc.ipk
+Installing lua (5.1.5-7) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/lua_5.1.5-7_mipsel_24kc.ipk
+Installing luci-lib-nixio (git-20.234.06894-c4a4e43) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-lib-nixio_git-20.234.06894-c4a4e43_mipsel_24kc.ipk
+Installing libnl-tiny1 (2020-08-05-c291088f-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libnl-tiny1_2020-08-05-c291088f-1_mipsel_24kc.ipk
+Installing luci-lib-ip (git-20.250.76529-62505bd) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-lib-ip_git-20.250.76529-62505bd_mipsel_24kc.ipk
+Installing libuci20130104 (2020-10-06-52bbc99f-3) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libuci20130104_2020-10-06-52bbc99f-3_mipsel_24kc.ipk
+Installing rpcd (2020-09-18-3fea6559-3) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/rpcd_2020-09-18-3fea6559-3_mipsel_24kc.ipk
+Installing libubus-lua (2020-10-25-ad0cd117-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libubus-lua_2020-10-25-ad0cd117-1_mipsel_24kc.ipk
+Installing luci-lib-jsonc (git-19.317.29469-8da8f38) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-lib-jsonc_git-19.317.29469-8da8f38_mipsel_24kc.ipk
+Installing liblucihttp0 (2019-07-05-a34a17d5-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/liblucihttp0_2019-07-05-a34a17d5-1_mipsel_24kc.ipk
+Installing liblucihttp-lua (2019-07-05-a34a17d5-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/liblucihttp-lua_2019-07-05-a34a17d5-1_mipsel_24kc.ipk
+Installing luci-lib-base (git-20.232.39649-1f6dc29) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-lib-base_git-20.232.39649-1f6dc29_all.ipk
+Installing rpcd-mod-file (2020-09-18-3fea6559-3) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/rpcd-mod-file_2020-09-18-3fea6559-3_mipsel_24kc.ipk
+Installing rpcd-mod-luci (20201107) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/rpcd-mod-luci_20201107_mipsel_24kc.ipk
+Installing cgi-io (2020-10-27-ab4c3471-19) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/packages/cgi-io_2020-10-27-ab4c3471-19_mipsel_24kc.ipk
+Installing luci-base (git-20.332.74200-03c77da) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-base_git-20.332.74200-03c77da_mipsel_24kc.ipk
+Installing libiwinfo20200105 (2020-06-03-2faa20e5-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/libiwinfo20200105_2020-06-03-2faa20e5-1_mipsel_24kc.ipk
+Installing libiwinfo-lua (2020-06-03-2faa20e5-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/libiwinfo-lua_2020-06-03-2faa20e5-1_mipsel_24kc.ipk
+Installing luci-mod-status (git-20.332.74200-03c77da) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-mod-status_git-20.332.74200-03c77da_mipsel_24kc.ipk
+Installing kmod-ledtrig-default-on (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ledtrig-default-on_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ledtrig-heartbeat (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ledtrig-heartbeat_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ledtrig-netdev (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ledtrig-netdev_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ledtrig-timer (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ledtrig-timer_5.4.80-1_mipsel_24kc.ipk
+Installing luci-mod-system (git-20.332.74200-03c77da) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-mod-system_git-20.332.74200-03c77da_all.ipk
+Installing rpcd-mod-iwinfo (2020-09-18-3fea6559-3) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/rpcd-mod-iwinfo_2020-09-18-3fea6559-3_mipsel_24kc.ipk
+Installing luci-mod-network (git-20.336.57713-f5c04e1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-mod-network_git-20.336.57713-f5c04e1_all.ipk
+Installing luci-mod-admin-full (git-19.253.48496-3f93650) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-mod-admin-full_git-19.253.48496-3f93650_all.ipk
+Installing luci-theme-bootstrap (git-20.229.69577-258e74c) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-theme-bootstrap_git-20.229.69577-258e74c_all.ipk
+Installing libxtables12 (1.8.4-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/libxtables12_1.8.4-1_mipsel_24kc.ipk
+Installing libip4tc2 (1.8.4-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/libip4tc2_1.8.4-1_mipsel_24kc.ipk
+Installing libip6tc2 (1.8.4-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/libip6tc2_1.8.4-1_mipsel_24kc.ipk
+Installing kmod-nf-reject (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-reject_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-nf-ipt (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-ipt_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ipt-core (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ipt-core_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-nf-conntrack (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-conntrack_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ipt-conntrack (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ipt-conntrack_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-nf-conntrack6 (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-conntrack6_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-nf-nat (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-nat_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ipt-nat (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ipt-nat_5.4.80-1_mipsel_24kc.ipk
+Installing firewall (2020-09-05-8c2f9fad-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/firewall_2020-09-05-8c2f9fad-1_mipsel_24kc.ipk
+Installing luci-app-firewall (git-20.325.44908-4dbf600) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-app-firewall_git-20.325.44908-4dbf600_all.ipk
+Installing libuclient20160123 (2020-06-17-c6609861-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libuclient20160123_2020-06-17-c6609861-1_mipsel_24kc.ipk
+Installing uclient-fetch (2020-06-17-c6609861-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/uclient-fetch_2020-06-17-c6609861-1_mipsel_24kc.ipk
+Installing libpthread (1.1.24-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/libpthread_1.1.24-2_mipsel_24kc.ipk
+Installing opkg (2020-11-25-66f458de-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/opkg_2020-11-25-66f458de-1_mipsel_24kc.ipk
+Installing luci-app-opkg (git-20.332.74200-03c77da) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-app-opkg_git-20.332.74200-03c77da_all.ipk
+Installing luci-proto-ppp (git-19.307.61018-284918b) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-proto-ppp_git-19.307.61018-284918b_all.ipk
+Installing luci-proto-ipv6 (git-20.247.70930-f94958e) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/luci-proto-ipv6_git-20.247.70930-f94958e_all.ipk
+Installing rpcd-mod-rrdns (20170710) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/luci/rpcd-mod-rrdns_20170710_mipsel_24kc.ipk
+Installing base-files (238-r15129-d346beb08c) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/base-files_238-r15129-d346beb08c_mipsel_24kc.ipk
+Installing ubusd (2020-10-25-ad0cd117-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/ubusd_2020-10-25-ad0cd117-1_mipsel_24kc.ipk
+Installing ubus (2020-10-25-ad0cd117-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/ubus_2020-10-25-ad0cd117-1_mipsel_24kc.ipk
+Installing jshn (2020-08-06-9e52171d-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/jshn_2020-08-06-9e52171d-1_mipsel_24kc.ipk
+Installing netifd (2020-11-30-42c48866-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/netifd_2020-11-30-42c48866-1_mipsel_24kc.ipk
+Installing jsonfilter (2018-02-04-c7e938d6-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/jsonfilter_2018-02-04-c7e938d6-1_mipsel_24kc.ipk
+Installing usign (2020-05-23-f1f65026-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/usign_2020-05-23-f1f65026-1_mipsel_24kc.ipk
+Installing openwrt-keyring (2019-07-25-8080ef34-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/openwrt-keyring_2019-07-25-8080ef34-1_mipsel_24kc.ipk
+Installing ubi-utils (2.1.2-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/ubi-utils_2.1.2-1_mipsel_24kc.ipk
+Installing ubox (2020-10-25-9ef88681-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/ubox_2020-10-25-9ef88681-1_mipsel_24kc.ipk
+Installing fstools (2020-10-16-f25ab8a8-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/fstools_2020-10-16-f25ab8a8-1_mipsel_24kc.ipk
+Installing fwtool (2019-11-12-8f7fe925-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/fwtool_2019-11-12-8f7fe925-1_mipsel_24kc.ipk
+Installing busybox (1.31.1-7) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/busybox_1.31.1-7_mipsel_24kc.ipk
+Installing ca-bundle (20200601-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/ca-bundle_20200601-1_all.ipk
+Installing dnsmasq (2.82-10) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/dnsmasq_2.82-10_mipsel_24kc.ipk
+Installing dropbear (2020.81-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/dropbear_2020.81-1_mipsel_24kc.ipk
+Package firewall (2020-09-05-8c2f9fad-1) installed in root is up to date.
+Package fstools (2020-10-16-f25ab8a8-1) installed in root is up to date.
+Installing ip6tables (1.8.4-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/ip6tables_1.8.4-1_mipsel_24kc.ipk
+Installing kmod-nf-reject6 (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-reject6_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-nf-ipt6 (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-ipt6_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ip6tables (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ip6tables_5.4.80-1_mipsel_24kc.ipk
+Installing iptables (1.8.4-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/iptables_1.8.4-1_mipsel_24kc.ipk
+Package iptables (1.8.4-1) installed in root is up to date.
+Package kernel (5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0) installed in root is up to date.
+Installing kmod-gpio-button-hotplug (5.4.80-3) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-gpio-button-hotplug_5.4.80-3_mipsel_24kc.ipk
+Installing kmod-ipt-offload (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ipt-offload_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-nf-flow (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-nf-flow_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-leds-gpio (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-leds-gpio_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-mt7603 (5.4.80+2020-09-23-b22977c2-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-mt7603_5.4.80%2b2020-09-23-b22977c2-2_mipsel_24kc.ipk
+Installing iw-full (5.8-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/iw-full_5.8-1_mipsel_24kc.ipk
+Installing wireless-regdb (2020.04.29-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/wireless-regdb_2020.04.29-1_all.ipk
+Installing kmod-cfg80211 (5.4.80+5.8-1-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-cfg80211_5.4.80%2b5.8-1-2_mipsel_24kc.ipk
+Installing hostapd-common (2020-06-08-5a8b3662-17) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/hostapd-common_2020-06-08-5a8b3662-17_mipsel_24kc.ipk
+Installing kmod-mac80211 (5.4.80+5.8-1-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-mac80211_5.4.80%2b5.8-1-2_mipsel_24kc.ipk
+Installing kmod-mt76-core (5.4.80+2020-09-23-b22977c2-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-mt76-core_5.4.80%2b2020-09-23-b22977c2-2_mipsel_24kc.ipk
+Installing kmod-mt76x2 (5.4.80+2020-09-23-b22977c2-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-mt76x2_5.4.80%2b2020-09-23-b22977c2-2_mipsel_24kc.ipk
+Installing kmod-mt76x02-common (5.4.80+2020-09-23-b22977c2-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-mt76x02-common_5.4.80%2b2020-09-23-b22977c2-2_mipsel_24kc.ipk
+Installing kmod-mt76x2-common (5.4.80+2020-09-23-b22977c2-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-mt76x2-common_5.4.80%2b2020-09-23-b22977c2-2_mipsel_24kc.ipk
+Package libc (1.1.24-2) installed in root is up to date.
+Package libgcc1 (8.4.0-2) installed in root is up to date.
+Installing libustream-wolfssl20200215 (2020-03-13-5e1bc342-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libustream-wolfssl20200215_2020-03-13-5e1bc342-1_mipsel_24kc.ipk
+Installing libwolfssl24 (4.5.0-stable-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libwolfssl24_4.5.0-stable-2_mipsel_24kc.ipk
+Installing logd (2020-10-25-9ef88681-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/logd_2020-10-25-9ef88681-1_mipsel_24kc.ipk
+Installing mtd (26) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/mtd_26_mipsel_24kc.ipk
+Package netifd (2020-11-30-42c48866-1) installed in root is up to date.
+Installing odhcp6c (2020-03-28-f575351c-16) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/odhcp6c_2020-03-28-f575351c-16_mipsel_24kc.ipk
+Installing odhcpd-ipv6only (2020-11-15-fb55e803-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/odhcpd-ipv6only_2020-11-15-fb55e803-1_mipsel_24kc.ipk
+Package opkg (2020-11-25-66f458de-1) installed in root is up to date.
+Installing ppp (2.4.8.git-2020-10-03-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/ppp_2.4.8.git-2020-10-03-2_mipsel_24kc.ipk
+Installing kmod-lib-crc-ccitt (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-lib-crc-ccitt_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-slhc (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-slhc_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-ppp (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-ppp_5.4.80-1_mipsel_24kc.ipk
+Installing ppp-mod-pppoe (2.4.8.git-2020-10-03-2) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/ppp-mod-pppoe_2.4.8.git-2020-10-03-2_mipsel_24kc.ipk
+Installing kmod-pppox (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-pppox_5.4.80-1_mipsel_24kc.ipk
+Installing kmod-pppoe (5.4.80-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/kmods/5.4.80-1-d8f1aa646eb2674fdadccb6f6c3309d0/kmod-pppoe_5.4.80-1_mipsel_24kc.ipk
+Installing procd (2020-11-30-46253504-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/procd_2020-11-30-46253504-1_mipsel_24kc.ipk
+Installing uci (2020-10-06-52bbc99f-3) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/uci_2020-10-06-52bbc99f-3_mipsel_24kc.ipk
+Package uclient-fetch (2020-06-17-c6609861-1) installed in root is up to date.
+Installing urandom-seed (2) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/urandom-seed_2_mipsel_24kc.ipk
+Installing getrandom (2020-10-25-9ef88681-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/getrandom_2020-10-25-9ef88681-1_mipsel_24kc.ipk
+Installing urngd (2020-01-21-c7f7b6b6-1) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/urngd_2020-01-21-c7f7b6b6-1_mipsel_24kc.ipk
+Installing wpad-basic-wolfssl (2020-06-08-5a8b3662-17) to root...
+Downloading https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/wpad-basic-wolfssl_2020-06-08-5a8b3662-17_mipsel_24kc.ipk
+Configuring liblucihttp0.
+Configuring libubox20191228.
+Configuring libubus20191227.
+Configuring cgi-io.
+Configuring liblua5.1.5.
+Configuring lua.
+Configuring luci-lib-nixio.
+Configuring libnl-tiny1.
+Configuring luci-lib-ip.
+Configuring libjson-c5.
+Configuring luci-lib-jsonc.
+Configuring liblucihttp-lua.
+Configuring luci-lib-base.
+Configuring libuclient20160123.
+Configuring uclient-fetch.
+Configuring libpthread.
+Configuring opkg.
+Configuring luci-app-opkg.
+Configuring libwolfssl24.
+Configuring libustream-wolfssl20200215.
+Configuring libblobmsg-json.
+Configuring ubusd.
+Configuring ubus.
+Configuring libuci20130104.
+Configuring rpcd.
+Configuring busybox.
+Configuring libubus-lua.
+Configuring kmod-nf-reject6.
+Configuring libiwinfo20200105.
+Configuring libiwinfo-lua.
+Configuring rpcd-mod-file.
+Configuring rpcd-mod-luci.
+Configuring luci-base.
+Configuring kmod-ledtrig-default-on.
+Configuring kmod-ledtrig-heartbeat.
+Configuring kmod-ledtrig-netdev.
+Configuring kmod-ledtrig-timer.
+Configuring luci-mod-system.
+Configuring kmod-nf-conntrack.
+Configuring kmod-nf-flow.
+Configuring kmod-lib-crc-ccitt.
+Configuring getrandom.
+Configuring luci-theme-bootstrap.
+Configuring kmod-slhc.
+Configuring kmod-ppp.
+Configuring kmod-pppox.
+Configuring kmod-pppoe.
+Configuring iw-full.
+Configuring hostapd-common.
+Configuring wpad-basic-wolfssl.
+Configuring kmod-nf-reject.
+Configuring kmod-nf-ipt.
+Configuring kmod-ipt-core.
+Configuring kmod-ipt-conntrack.
+Configuring jshn.
+Configuring netifd.
+Configuring jsonfilter.
+Configuring usign.
+Configuring openwrt-keyring.
+Configuring ubi-utils.
+Configuring ubox.
+Configuring fstools.
+Configuring fwtool.
+Configuring base-files.
+Configuring kmod-nf-nat.
+Configuring dnsmasq.
+Configuring libjson-script.
+Configuring procd.
+Configuring luci-mod-status.
+Configuring libxtables12.
+Configuring libip4tc2.
+Configuring libip6tc2.
+Configuring kmod-nf-conntrack6.
+Configuring kmod-ipt-nat.
+Configuring firewall.
+Configuring luci-app-firewall.
+Configuring kmod-nf-ipt6.
+Configuring kmod-ip6tables.
+Configuring odhcp6c.
+Configuring uci.
+Configuring wireless-regdb.
+Configuring kmod-cfg80211.
+Configuring kmod-mac80211.
+Configuring kmod-mt76-core.
+Configuring kmod-mt76x02-common.
+Configuring kmod-mt76x2-common.
+Configuring dropbear.
+Configuring mtd.
+Configuring odhcpd-ipv6only.
+Configuring urandom-seed.
+Configuring luci-proto-ppp.
+Configuring ppp.
+Configuring rpcd-mod-iwinfo.
+Configuring luci-mod-network.
+Configuring luci-mod-admin-full.
+Configuring kmod-leds-gpio.
+Configuring kmod-gpio-button-hotplug.
+Configuring logd.
+Configuring kmod-mt7603.
+Configuring luci-proto-ipv6.
+Configuring iptables.
+Configuring uhttpd.
+Configuring ip6tables.
+Configuring ca-bundle.
+Configuring uhttpd-mod-ubus.
+Configuring rpcd-mod-rrdns.
+Configuring luci.
+Configuring kmod-mt76x2.
+Configuring kmod-ipt-offload.
+Configuring urngd.
+Configuring ppp-mod-pppoe.
+
+Finalizing root filesystem...
+Enabling boot
+Enabling bootcount
+Enabling cron
+Enabling dnsmasq
+Enabling done
+Enabling dropbear
+Enabling firewall
+Enabling gpio_switch
+Enabling led
+Enabling log
+Enabling network
+Enabling odhcpd
+Enabling rpcd
+Enabling set-irq-affinity
+Enabling sysctl
+Enabling sysfixtime
+Enabling sysntpd
+Enabling system
+Enabling ucitrack
+Enabling uhttpd
+Enabling umount
+Enabling urandom_seed
+Enabling urngd
+Enabling wpad
+
+Building images...
+Pseudo file "/dev" exists in source filesystem "/root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/root-ramips/dev".
+Ignoring, exclude it (-e/-ef) to override.
+Parallel mksquashfs: Using 1 processor
+Creating 4.0 filesystem on /root/xiaomi4ag-RouterSnap/openwrt-imagebuilder-ramips-mt7621.Linux-x86_64/build_dir/target-mipsel_24kc_musl/linux-ramips_mt7621/root.squashfs, block size 262144.
+[===============================================================|] 898/898 100%
+
+Exportable Squashfs 4.0 filesystem, xz compressed, data block size 262144
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 3102.94 Kbytes (3.03 Mbytes)
+	35.56% of uncompressed filesystem size (8726.73 Kbytes)
+Inode table size 8066 bytes (7.88 Kbytes)
+	20.25% of uncompressed inode table size (39836 bytes)
+Directory table size 11800 bytes (11.52 Kbytes)
+	46.53% of uncompressed directory table size (25359 bytes)
+Number of duplicate files found 124
+Number of inodes 1204
+Number of files 896
+Number of fragments 23
+Number of symbolic links  196
+Number of device nodes 1
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 111
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	unknown (0)
+Number of gids 1
+	unknown (0)
+4829+1 records in
+4829+1 records out
+2472918 bytes (2.5 MB, 2.4 MiB) copied, 0.0302762 s, 81.7 MB/s
+6205+1 records in
+6205+1 records out
+3177412 bytes (3.2 MB, 3.0 MiB) copied, 0.0377738 s, 84.1 MB/s
+padding image to 00564000
+padding image to 00570000
+padding image to 00580000
+
+Calculating checksums...
