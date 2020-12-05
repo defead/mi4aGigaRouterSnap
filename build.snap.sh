@@ -37,4 +37,3 @@ cp $targetBin ../firmware/snap/${sVersion}-luci.bin
 cd ..
 echo [ $(date) ] luci.bin build >> ./versionDate
 echo '--------------' >> ./versionDate
-
