@@ -37,7 +37,7 @@ make image PROFILE=$profileSetting PACKAGES="luci" >> ../buildInfo 2>&1
 cp $targetBin ../firmware/snap/${sVersion}-luci.bin
 
 cd ..
-echo [ $(date) ] luci.bin build >> ./versionDate
+echo [ $(date "+%a %b %e %R:%S %Y") ] luci.bin build >> ./versionDate
 echo '--------------' >> ./versionDate
 
 echo ${sVersion}-luci.bin >./latestVersion
