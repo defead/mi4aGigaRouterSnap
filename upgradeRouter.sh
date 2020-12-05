@@ -3,7 +3,7 @@ githubLatest=$(curl -so- https://raw.githubusercontent.com/defead/xiaomi4ag-Rout
 luciVersion=$(cat ./latestVersion)
 echo --------
 echo $(date)
-echo githubLatest==localVersion, no need to update
+echo [ githubLatest==localVersion ] No need to update!
 [ $githubLatest = $luciVersion ] && exit
 wget https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/firmware/snap/$githubLatest -O ./firmware/snap/$githubLatest
 echo $githubLatest > ./latestVersion
