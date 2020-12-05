@@ -28,10 +28,12 @@ echo [ $sTime ] .bin version >> ./versionDate
 
 #build luci version
 rm -r openwrt-imagebuilder-ramips-mt7621.Linux-x86_64*
+echo downloading imagebuilder
 wget -nv $builderUrl
 tar -xf openwrt-imagebuilder-ramips-mt7621.Linux-x86_64.tar.xz
 cd openwrt-imagebuilder-ramips-mt7621.Linux-x86_64
-make image PROFILE=$profileSetting PACKAGES="luci"
+echo building luci version ... output: buildInfo
+make image PROFILE=$profileSetting PACKAGES="luci" >> ./buildInfo 2>&1
 cp $targetBin ../firmware/snap/${sVersion}-luci.bin
 
 cd ..
