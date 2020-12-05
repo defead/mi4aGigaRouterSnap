@@ -23,7 +23,7 @@ echo Expected version $sVersion
 }
 
 #download default bin
-wget $defaultUrl -nvO ./firmware/snap/${sVersion}.bin &
+wget $defaultUrl -nv -O ./firmware/snap/${sVersion}.bin &
 echo [ $sTime ] .bin version >> ./versionDate
 
 #build luci version
