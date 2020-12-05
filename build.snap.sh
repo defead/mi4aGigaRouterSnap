@@ -39,3 +39,9 @@ echo [ $(date) ] luci.bin build >> ./versionDate
 echo '--------------' >> ./versionDate
 
 echo ${sVersion}-luci.bin >./latestVersion
+
+
+#github push
+git add .
+git commit -am "add version ${sVersion}"
+git push
