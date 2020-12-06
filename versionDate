@@ -1,8 +1,8 @@
-[ Thu Dec 3 04:37:41 2020 ] .bin version
-[ Sat Dec 5 15:15:44 2020 ] luci.bin build
+[ Thu Dec 3 04:37:41 2020 ] Dec_3.bin version
+[ Sat Dec 5 15:15:44 2020 ] Dec_3-luci.bin build
 --------------
-[ Sat Dec 5 09:17:39 2020 ] .bin version
-[ Sat Dec 5 16:32:49 2020 ] dd.luci.bin build
+[ Sat Dec 5 09:17:39 2020 ] Dec_5.bin version
+[ Sat Dec 5 16:32:49 2020 ] Dec_5-luci.bin build
 --------------
 [ Sun Dec 6 14:07:58 2020 ] Dec_6.bin version
 [ Sun Dec 6 21:18:57 2020 ] Dec_6-luci.bin build
