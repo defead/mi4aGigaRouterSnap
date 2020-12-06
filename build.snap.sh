@@ -24,7 +24,7 @@ echo Expected version $sVersion
 
 #download default bin
 wget $defaultUrl -nv -O ./firmware/snap/${sVersion}.bin &
-echo [ $sTime ] .bin version >> ./versionDate
+echo [ $sTime ] $sVersion.bin version >> ./versionDate
 
 #build luci version
 rm -r openwrt-imagebuilder-ramips-mt7621.Linux-x86_64*
@@ -37,7 +37,7 @@ make image PROFILE=$profileSetting PACKAGES="luci" >> ../buildInfo.$sVersion 2>&
 cp $targetBin ../firmware/snap/${sVersion}-luci.bin
 
 cd ..
-echo [ $(date "+%a %b %e %R:%S %Y") ] luci.bin build >> ./versionDate
+echo [ $(date "+%a %b %e %R:%S %Y") ] $sVersion-luci.bin build >> ./versionDate
 echo '--------------' >> ./versionDate
 
 echo ${sVersion}-luci.bin >./latestVersion
