@@ -15,8 +15,8 @@ sLine=$(cat index.html | grep 4a-gigabit-squashfs-sysupgrade.bin)
 sTime=$(expr "$sLine" : '.*"d">\(.*\)</td>.*')
 sVersion=$(echo $sTime | awk '{printf "%s_%s", $2,$3}')
 #sVersion=Dec_2
-echo -e '--------\n'$(date)
-echo Expected version $sVersion
+echo -e '--------'
+echo $(date '+%T') Expected version $sVersion
 [ -f ./firmware/snap/${sVersion}.bin ] && {
     echo Version ${sVersion}.bin already exist !
     exit
