@@ -1,14 +1,16 @@
 #!/bin/bash
 # cd the directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 cd $DIR
 
 #upgrade router firmware
 githubLatest=$(curl -so- https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/latestVersion)
 luciVersion=$(cat ./latestVersion)
 #echo --------
-echo $(date '+%F %T') '[ githubLatest==localVersion ] No need to update!'
-[ $githubLatest = $luciVersion ] && exit
+[ $githubLatest = $luciVersion ] && {
+    echo $(date '+%F %T') "[ Latest: ${githubLatest} ] No need to update!"
+    exit
+}
 #wget https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/firmware/snap/$githubLatest -O ./firmware/snap/$githubLatest
 #echo $githubLatest >./latestVersion
 git pull
