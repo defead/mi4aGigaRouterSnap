@@ -16,7 +16,7 @@ sTime=$(expr "$sLine" : '.*"d">\(.*\)</td>.*')
 sVersion=$(echo $sTime | awk '{printf "%s_%s", $2,$3}')
 #sVersion=Dec_2
 echo -e '--------'
-echo $(date '+%T') Expected version $sVersion
+echo $(date '+%F %T') Expected version $sVersion
 [ -f ./firmware/snap/${sVersion}.bin ] && {
     echo Version ${sVersion}.bin already exist !
     exit
