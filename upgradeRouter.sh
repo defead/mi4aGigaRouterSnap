@@ -2,26 +2,36 @@
 # cd the directory
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 cd $DIR
+checkState=false
 
-#upgrade router firmware
-githubLatest=$(curl -so- https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/latestVersion)
-luciVersion=$(cat ./latestVersion)
-#echo --------
-[ $githubLatest = $luciVersion ] && {
-    echo $(date '+%F %T') "[ Latest: ${githubLatest} ] No need to update!"
-    exit
+checkFirmware() {
+    luciVersion=$(cat ./latestVersion)
+    [ "$1" = "u" ] && {
+        checkState=true
+        return
+    }
+    githubLatest=$(curl -so- https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/latestVersion)
+    [ $githubLatest = $luciVersion ] && {
+        echo $(date '+%F %T') "[ Latest: ${githubLatest} ] No need to update!"
+        checkState=false
+        return
+    }
 }
 
-echo --------
-echo $(date '+%F %T') "Upgrading begins..."
+updateFirmware() {
+    echo --------
+    echo $(date '+%F %T') "Upgrading begins..."
+    git pull
+    scp ./firmware/snap/$luciVersion root@192.168.0.1:/tmp
+    ssh root@192.168.0.1 sysupgrade -v /tmp/$luciVersion
+    echo $(date '+%F %T') "Upgrading finishes..."
+    echo --------
+}
 
-#wget https://raw.githubusercontent.com/defead/xiaomi4ag-RouterSnap/main/firmware/snap/$githubLatest -O ./firmware/snap/$githubLatest
-#echo $githubLatest >./latestVersion
-git pull
+main() {
+    checkFirmware "$@"
+    # $checkState && echo $luciVersion
+    $checkState && updateFirmware
+}
 
-#update firmware
-scp ./firmware/snap/$githubLatest root@192.168.0.1:/tmp
-ssh root@192.168.0.1 sysupgrade -v /tmp/$githubLatest
-
-echo $(date '+%F %T') "Upgrading finishes..."
-echo --------
+main "$@"
