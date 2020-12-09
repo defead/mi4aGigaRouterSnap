@@ -15,6 +15,9 @@ checkFirmware() {
         echo $(date '+%F %T') "[ Latest: ${githubLatest} ] No need to update!"
         checkState=false
         return
+    } || {
+        checkState=true
+        luciVersion=$githubLatest
     }
 }
 
