@@ -8,7 +8,8 @@ targetBin="./bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mi-router-4a
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 cd $DIR
 
-echo -e "--------$(git pull)"
+echo -e "--------"
+git pull
 
 #check version
 rm index.html
