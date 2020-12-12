@@ -23,6 +23,8 @@ echo $(date '+%F %T') Expected version $sVersion
 }
 
 
+git pull
+
 #build luci version
 rm -r openwrt-imagebuilder-ramips-mt7621.Linux-x86_64*
 echo downloading imagebuilder
@@ -50,7 +52,6 @@ echo '--------------' >>./versionDate
 echo ${sVersion}-luci.bin >./latestVersion
 
 #github push
-git pull
 git add .
 git commit -am "add version ${sVersion}"
 git push
