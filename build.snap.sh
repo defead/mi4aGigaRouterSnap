@@ -8,6 +8,8 @@ targetBin="./bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mi-router-4a
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 cd $DIR
 
+echo -e "--------$(git pull)"
+
 #check version
 rm index.html
 wget -q https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/
@@ -15,15 +17,11 @@ sLine=$(cat index.html | grep 4a-gigabit-squashfs-sysupgrade.bin)
 sTime=$(expr "$sLine" : '.*"d">\(.*\)</td>.*')
 sVersion=$(echo $sTime | awk '{printf "%s_%s", $2,$3}')
 #sVersion=Dec_1
-echo -e '--------'
 echo $(date '+%F %T') Expected version $sVersion
 [ -f ./firmware/snap/${sVersion}.bin ] && {
     echo Version ${sVersion}.bin already exist !
     exit
 }
-
-
-git pull
 
 #build luci version
 rm -r openwrt-imagebuilder-ramips-mt7621.Linux-x86_64*
