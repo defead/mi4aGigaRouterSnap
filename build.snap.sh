@@ -43,7 +43,7 @@ cp $targetBin ../firmware/snap/${sVersion}-luci.bin
 
 cd ..
 #download default bin
-wget $defaultUrl -nv -O ./firmware/snap/${sVersion}.bin &
+wget $defaultUrl -nv -O ./firmware/snap/${sVersion}.bin 
 
 echo [ $sTime ] $sVersion.bin version >>./versionDate
 echo [ $(date "+%a %b %e %R:%S %Y") ] $sVersion-luci.bin build >>./versionDate
