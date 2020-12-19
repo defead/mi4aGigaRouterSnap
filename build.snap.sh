@@ -31,7 +31,7 @@ wget -nv $builderUrl
 tar -xf openwrt-imagebuilder-ramips-mt7621.Linux-x86_64.tar.xz
 cd openwrt-imagebuilder-ramips-mt7621.Linux-x86_64
 echo building luci version ... output: buildInfo
-make image PROFILE=$profileSetting PACKAGES="luci" >>../buildInfo.$sVersion 2>&1
+make image PROFILE=$profileSetting PACKAGES="luci luci-theme-material" >>../buildInfo.$sVersion 2>&1
 if [ $? -eq 0 ]; then
     echo "Successfully created $sVersion"
 else
